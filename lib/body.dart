@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:math';
-import 'package:google_fonts/google_fonts.dart';
 
 const _Letters = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz';
 const _Numbers = '123456789';
@@ -111,7 +110,7 @@ class _Body extends State<Body> {
                       child: TextField(
                         controller: TextBoxController,
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.openSans(fontSize: 25, fontWeight: FontWeight.w300),
+                        style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                         decoration: InputDecoration(
                             filled: true,
                             fillColor: Colors.white,
